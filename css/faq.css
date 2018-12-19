@@ -1,0 +1,105 @@
+#faq{
+	padding-top: 60px;
+	background: #fff
+}
+
+.faq{
+	background: #fff;
+	box-shadow: 2px 2px 15px #ccc;
+	border-radius: 5px;
+	padding: 0 26px;
+	margin-bottom: 70px;
+}
+
+.faq1 button{
+	color: #8C8C8C;
+	font-size: 24px;
+	border: none;
+	background: #fff;
+	padding: 10px 0;
+	outline: none;
+	width: 100%;
+	border-bottom: 1px solid #C4C4C4;
+}
+
+.num{
+	margin-right: 20px;
+	font-weight: 600;
+}
+
+span.caret{
+	margin-left: auto
+}
+
+.rotate{
+	transform: rotate(180deg);
+}
+
+#faq1, #faq2, #faq3, #faq4, #faq5{
+	color: #353535;
+	font-weight: 500;
+	font-size: 16px;
+	padding-bottom: 11px;
+}
+
+.read_more{
+	color: #C1272D !important;
+	font-weight: 300;
+	position: absolute;
+	right: 50px
+}
+
+.border-none{
+	border-bottom: none !important;
+}
+.soc_hover i:hover {
+	position: relative;
+	top: 5px;
+	padding: 0px 5px 0px 5px
+}
+.rot:hover {
+-webkit-transform: rotateZ(360deg);
+  -ms-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+.b {
+	margin: 0 auto;
+	position: relative;
+	top: 10px
+}
+.email_hover {
+	opacity: 0;
+}
+#button {
+	display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition:  
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  background-image: url(../images/.png);
+  background-repeat: no-repeat;
+  left: 40px
+}
+#button::after {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+}
+#button:hover {
+  cursor: pointer;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}

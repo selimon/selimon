@@ -15,17 +15,19 @@
 	<link rel="stylesheet" type="text/css" href="css/carouse__two.css">
 	<link rel="stylesheet" type="text/css" href="css/bottom-effect.css">
 	<link rel="stylesheet" type="text/css" href="css/projects.css">	
+	<link rel="stylesheet" type="text/css" href="css/mobile_functions.css">
 </head>
 <body>
-	<header id="header" class="header">
+	<header id="header" class="header" style="position: fixed; width: 100%;background-color: #4D4D4D;height: 70px;opacity: 0.7">
 		<div class="container">
 			<div class="headaing d-flex align-items-center">
+				<a href="glavnaya.html"><img src="img/Logo.png" alt="" class="logotip_none"></a>
 				<div class="logotip_one">
 					<a href="#"><img src="img/Group (4).png" alt=""><span class="logotip">Печушка</span></a>
 				</div>
 				<nav class="nav">
 					<ul class="menu d-flex">
-						<li class="menu__item"><a href="#">Главная</a></li>
+						<li class="menu__item"><a href="glavnaya.html">Главная</a></li>
 						<li class="menu__item"><a href="desktop5.html">Материалы</a></li>
 						<li class="menu__item"><a href="blog.html">Блог</a></li>
 					</ul>
@@ -49,12 +51,12 @@
 				<nav class="mobile_nav">
 					<i class="fas fa-times"></i>
 					<ul class="mobile__menu">
-						<li class="menu__item"><a href="#">Главная</a></li>
-						<li class="menu__item"><a href="#">Материалы</a></li>
+						<li class="menu__item"><a href="glavnaya.html">Главная</a></li>
+						<li class="menu__item"><a href="desktop5.html">Материалы</a></li>
 						<li class="menu__item"><a href="#">Услуги</a></li>
 						<li class="menu__item"><a href="#">Преимущества</a></li>
 						<li class="menu__item"><a href="#">Обо мне</a></li>
-						<li class="menu__item"><a href="#">Мои работы</a></li>
+						<li class="menu__item"><a href="index.html">Мои работы</a></li>
 						<li class="menu__item"><a href="#">Отзыви</a></li>
 						<li class="menu__item"><a href="#">Вопросы</a></li>
 						<li class="menu__item"><a href="projects.html">Чертежи</a></li>
@@ -117,8 +119,11 @@
   </a>
 </div>
 </div>
+<div id="fixed">
+		<a href="glavnaya.html"><img src="img/Logo (1).png" ></a>
+	</div>
 <div class="color display__none">
- 	<img src="img/Logo (1).png" alt="" class="carousel-logo absolute">
+	
  	<ul class="ul__one absolute">
  		<a href="#"><li>Услуги</li></a>
  		<a href="#"><li>Преимущества</li></a>
@@ -132,8 +137,8 @@
  	<h1 class="absolute text-h1 ">Печи, камины, мангалы и <br><span class="barber absolute"> барбекю</span></h1>
  	<p class="absolute p__text">эксклюзивные архитектурные решения</p>
  	<form class="form_one absolute" >
-			<button class="btn mobile_version">
-  				Заказать звонок
+			<button class="btnn mobile_version btn_one">
+  				<a href="#line_botton">Заказать звонок</a>
 				</button>
 	</form>
  </div>
@@ -190,7 +195,7 @@
 						<div class=" text-center col-lg-12 titles_main">
 						<h1>Услуги</h1>
 						</div>
-						<div class="row">
+						<div class="row yslygi">
 							<div class="col-lg-4 text-center services__item">
 								<svg class="transform position services__icon" width="60" height="50" viewBox="0 0 60 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.86721 1.13636C0.82175 3.63636 -0.314614 7.42424 0.064174 27.197C0.367204 43.7121 0.82175 45.6818 5.44296 48.4848C7.71569 49.9242 9.38236 50 33.4733 50H59.0036V28.8636C59.0036 10.303 58.8521 7.65152 57.7914 7.27273C57.1096 7.04546 47.1096 6.81818 35.443 6.81818H14.3066V4.31818C14.3066 1.81818 13.1702 -7.45058e-07 11.7308 -7.45058e-07C11.2763 0.0757561 9.53387 0.530303 7.86721 1.13636ZM54.4581 28.7879V45.4545H33.3218C19.8369 45.4545 11.4278 45.1515 9.8369 44.6212C8.47327 44.1667 6.95811 42.803 6.2763 41.5152C4.3066 37.7273 6.50357 33.8636 11.4278 32.5758L14.3066 31.7424V21.9697V12.1212H34.3824H54.4581V28.7879Z" fill="#555555" class="services__icon"/>
@@ -210,7 +215,7 @@
 </svg>
 
 								<h3>Выполнение работ</h3>
-								<p class="text-align">Кладка печи<br>
+								<p class="text-align one">Кладка печи<br>
 									камины<br>
 									мангалы и барбекю</p>
 									<span id="line"></span>
@@ -228,7 +233,7 @@
 </svg>
 
 								<h3>Дополнительные услуги</h3>
-								<p class="text-align">Закупка материалов<br>
+								<p class="text-align one">Закупка материалов<br>
 									Изготовление уникальных<br>
 									элементов</p>
 									<span id="line"></span>
@@ -290,19 +295,19 @@
 					<div class="col-lg-4">
 						<div class="">
 							<form class="form_one_one form_one" >
-								<button class="btn">
-  								Заказать звонок
+								<button class="btnn">
+  								<a href="#line_botton">Заказать звонок</a>
 								</button>
 						</form>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div>
-							<img src="img/IMG-f10329175e7b0c40887f1fdf9950c213-V.png" alt="" class="info_img ellips" height="350" width="350" id="oval_360">
+							<img src="img/IMG-f10329175e7b0c40887f1fdf9950c213-V.png" alt="" class="info_img ellips display__none" height="350" width="350" id="oval_360">
 						</div>
 					</div>
-					<div class="col-lg-7 col-md-12 col-xs-12">
-						<div class=" border__block position_absolute">
+					<div class="col-lg-7 col-md-12 col-xs-12 block_up">
+						<div class=" border__block position_absolute ">
 							<h1 class="text-center pt-3 pb-5 ">Коротко обо мне</h1>
 
 							<h3 class="ml-5 pb-3">В двух словах</h3>
@@ -324,12 +329,12 @@
 	</section>
 								<!---section__tri--->
 
-<section id="bacground_image_one">
+<section id="bacground_image_one" class="section__tri">
 	<div class="container" >
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="text-center section_tri">
-					<h1>Мои работы</h1>
+					<h1 class="color_black">Мои работы</h1>
 				</div>
 			</div>
 		</div>
@@ -339,7 +344,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 					<div class="portfolio__item">
 						<img src="img/pech-kamin0.png" alt="portfolio" class="portfolio__preview">	
-						<a href="img/pech-kamin0.png" data-lightbox="image-1" data-title="Description">						
+						<a href="images/pechka-v-dome29.jpg" data-lightbox="image-1" data-title="Description">						
 							<div class="inner text-center">
 								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
 								<div class="portfolio__description">
@@ -416,17 +421,18 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-8 ">
+				<div class="col-lg-7  ">
 					<div>
-						<h4 class="text-center mb-4">Бесплатная консультация</h4>
+						<h4 class="text-right mb-5 form_one">Бесплатная консультация</h4>
+						
 
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="text-center mb__one">
-						<form class="form_button" >
-								<button class="btn">
-  								Заказать звонок
+				<div class="col-lg-3 text-center">
+					<div class=" mb__one">
+						<form class="form_button " >
+								<button class="btnn " >
+  							<a href="#line_botton">Заказать звонок</a>
 								</button>
 						</form>
 					</div>
@@ -437,12 +443,17 @@
 
 		<!---section_fo--->
 
-		<section class="display__none">
+		<section class="">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 					<div class="text-center mt-5 mb-5">
 						<h1 class="">Отзывы клиентов</h1>
+					</div>
+					<div class="col-lg-12 text-center mb-5">
+						<div>
+							<iframe  src="https://www.youtube.com/embed/l6pDOwNeTrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
 					</div>
 				</div>
 				</div>
@@ -684,8 +695,8 @@
 							Камины
 						</h2>
 						<img src="img/fireplace.png" alt="project" class="project_preview">
-					</div>
 				</div>
+			</div>
 				<div class="col-lg-4">
 					<div class="projects__item text-center">
 						<h2 class="projects__title">
@@ -767,7 +778,7 @@
 							<input type="text" id="question">
 						</div>
 						<div class="form-group text-center">
-							<button class="btn">
+							<button class="btn" id="line_botton">
   								Отправить заявку
 								</button>
 						</div>
@@ -782,14 +793,14 @@
 				<nav class="footer__nav">
 					<img src="img/footer_logo.png" alt="logo" class="logo">
 					<ul class="footer__menu">
-						<li class="footer__menu__item"><a href="#">Главнaя</a></li>
+						<li class="footer__menu__item"><a href="glavnaya.html">Главнaя</a></li>
 						<li class="footer__menu__item"><a href="desktop5.html">Материалы</a></li>
 						<li class="footer__menu__item"><a href="blog.html"></a></li>
 						<li class="footer__menu__item"><a href="index.html">Портфолио</a></li>
 						<li class="footer__menu__item"><a href="projects.html">Чертежи</a></li>
 						<li class="footer__menu__item"><a href="faq.html">FAQ</a></li>
 					</ul>
-					<a href="javascript:void(0)" onclick="slowScroll('#header')"><i class="far fa-arrow-alt-circle-up way_up rot"></i></a>
+					<a href="#" id="button"></a>
 				</nav>
 				<div class="author text-center">
 					<img src="img/author.png" alt="author" class="author__img">
@@ -817,8 +828,8 @@
 						</a>
 					</div>
 				</div>
-				<div class="footer__nav2 ml-auto">
-					<ul class="footer__nav__menu text-right">
+				<div class="footer__nav2 ml-auto" id="center">
+					<ul class="footer__nav__menu text-right" >
 						<li class="footer__nav__menu__item">
 							<a href="#">Услуги</a>
 						</li>
@@ -851,7 +862,7 @@
 					<div class="credits__item text-left">
 						Создатели сайта<br>
 						Дизайн: Станислав +380972710176<br>
-						Верстка: Дава
+						<span style="color: white" class="to_encrease">Верстка</span>
 					</div>
 					<div class="credits__item text-right">
 						© Copyright 2018-2019 by Иван Калинчук. Все права защищены
@@ -876,6 +887,31 @@
 				$(this).toggleClass('form-active');
 			});
 		});
+	</script>
+	<script src="js/scrolling.js"></script>
+	<script>
+		jQuery(function($) {
+  function fixDiv() {
+    var $cache = $('#fixed');
+    if ($(window).scrollTop() > 150)
+      $cache.css({
+        'position': 'fixed',
+        'top': '20px',
+        'left': '30px',
+        'width': '177px',
+        'opacity': '1',
+      });
+    else
+      $cache.css({
+        'opacity': '0',
+        'top': '7em',
+        'left': '20em',
+        'width': '279px',
+      });
+  }
+  $(window).scroll(fixDiv);
+  fixDiv();
+});
 	</script>
 </body>
 </html>

@@ -11,16 +11,17 @@
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="css/article.css">
 	<title>Печушка</title>
+	<link rel="stylesheet" type="text/css" href="css/bottom-effect.css">
 </head>
 <body>
 	<header id="header" class="header">
 		<div class="container">
 			<div class="headaing d-flex align-items-center">
-				<img src="img/Logo.png" alt="logo" class="logo">
+				<a href="glavnaya.html"><img src="img/Logo.png" alt="logo" class="logo"></a>
 				<nav class="nav">
 					<ul class="menu d-flex">
-						<li class="menu__item"><a href="#">Главная</a></li>
-						<li class="menu__item"><a href="#">Материалы</a></li>
+						<li class="menu__item"><a href="glavnaya.html">Главная</a></li>
+						<li class="menu__item"><a href="desktop5.html">Материалы</a></li>
 						<li class="menu__item"><a href="blog.html">Блог</a></li>
 					</ul>
 				</nav>
@@ -31,11 +32,11 @@
 					<div class="info d-flex justify-content-end">
 						<div class="info__item info__phone">
 							<i class="fa fa-phone"></i>
-							+380939631280
+							<a href="#">+380939631280</a>
 						</div>
 						<div class="info__item info__viber">
 							<i class="fab fa-viber"></i>
-							+380939631280
+							<a href="#">+380939631280</a>
 						</div>
 					</div>
 				</div>
@@ -98,21 +99,21 @@
 				<nav class="footer__nav">
 					<img src="img/footer_logo.png" alt="logo" class="logo">
 					<ul class="footer__menu">
-						<li class="menu__item"><a href="#">Главнaя</a></li>
-						<li class="menu__item"><a href="#">Материалы</a></li>
+						<li class="menu__item"><a href="glavnaya.html">Главнaя</a></li>
+						<li class="menu__item"><a href="desktop5.html">Материалы</a></li>
 						<li class="menu__item"><a href="blog.html">Блог</a></li>
 						<li class="menu__item"><a href="index.html">Портфолио</a></li>
 						<li class="menu__item"><a href="projects.html">Чертежи</a></li>
 						<li class="menu__item"><a href="faq.html">FAQ</a></li>
 					</ul>
-					<a href="javascript:void(0)" onclick="slowScroll('#header')"><i class="far fa-arrow-alt-circle-up way_up"></i></a>
+					<a href="#" id="button"></a>
 				</nav>
 				<div class="author text-center">
 					<img src="img/author.png" alt="author" class="author__img">
 					<h2 class="credo">
 						Я рад буду сотрудничать с вами
 					</h2>
-					<div class="soc_links">
+					<div class="soc_links soc_hover">
 						<i class="fab fa-facebook"></i>
 						<i class="fab fa-instagram"></i>
 						<i class="fab fa-skype"></i>
@@ -129,7 +130,7 @@
 						<input type="text" placeholder="Имя" id="name" class="input">
 						<input type="text" placeholder="Телефон" class="input">
 						<input type="text" placeholder="Город, вопрос, или тема" class="input">
-						<button class="send">
+						<button class="btn b">
 							Отправить заявку
 						</button>
 					</form>
@@ -154,5 +155,6 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/scrolling.js"></script>
 </body>
 </html>	
