@@ -1,0 +1,98 @@
+#blog{
+	padding-top: 60px;
+}
+
+.blog__item{
+	padding: 24px 26px 19px 61px;
+	box-shadow: -3px 3px 20px #ccc;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.preview{
+	margin-right: 87px;
+}
+
+.info__title{
+	padding-bottom: 25px;
+	border-bottom: 1px solid #C1272D;
+}
+
+.info__title, .info__title span{
+	font-size: 24px;
+	font-weight: 500;
+	color: #353535;
+}
+
+.info__title span{
+	font-size: 18px;
+}
+
+.info__date{
+	display: block;
+}
+
+.info__text{
+	margin-top: 32px;
+	color: #555555;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.info__author{
+	margin-top: 24px;
+	display: block;
+}
+
+.info__author__author{
+	color: #000
+}
+.rot:hover {
+ -webkit-transform: rotateZ(360deg);
+  -ms-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+
+.soc_hover i:hover {
+	position: relative;
+	top: 5px;
+	padding: 0px 5px 0px 5px
+}
+button {
+	margin:0 auto;
+	position: relative;
+	top: 10px
+}
+#button {
+	display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition:  
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  background-image: url(../images/.png);
+  background-repeat: no-repeat;
+  left: 40px
+}
+#button::after {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+}
+#button:hover {
+  cursor: pointer;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}

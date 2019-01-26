@@ -1,0 +1,83 @@
+.indicators li {
+      position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50px
+
+}
+
+
+.indicators  {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0px;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+
+.send {
+  border-radius: 360px;
+  background-color: red;
+  border:none;
+
+}
+
+.logo {
+   position: relative;
+  top: -310px;
+  right: 380px;
+  max-width: 100%;
+   width: 200px;
+   height: 48
+}
+
+.ul-one li {
+  display: inline;
+  margin: 0px 0px 0px 10px;
+  position: relative;
+  top: -250px;
+  color: white;
+  left: 120px;
+  font-size: 0.875em;
+}
+
+.h2_one {
+  font-size: 3em;
+  position: relative;
+  top: -250px;
+}
+.carousel-inner {
+  mix-blend-mode: darken;
+    box-shadow: inset 0px 0px 200px #000000;
+}
+.p__two {
+  position: relative;
+  top: -240px;
+}
+.form__form {
+  position: relative;
+  top: -200px;
+}
+.button_but {
+  height: 38px;
+  width: 180px;
+  background-color: red;
+  border: none;
+  border-radius: 360px
+}
