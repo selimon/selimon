@@ -1,39 +1,113 @@
+// specification
 body 
-  font-family: 'Charm', cursive
+	background-image: url(../images/cosmos.jpg)
+	background-size: cover
+
 img 
-  max-width: 100%
+	max-width: 100%
+a a:hover
+	text-decoration: none
+	color: inherit
+.container 
+	max-width: 1170px
+	width: 100%
+li 
+	list-style: none
+$color: white
+$color-white: white
+$color-fon: #8fe357
+$size24: 24px
 
-$size42: 3em
-$size60: 2em
-$size24: 1.5em
-.sec-1
-h2
-  font-size: $size60
-  font-family: 'Open Sans', sans-serif
-  -webkit-text-stroke-color: black
-  -webkit-text-stroke: 1px white
-  -webkit-text-fill-color: transparent
-.botton 
-  width: 10px
-  height: 10px
-  border-radius: 60%
-  background-color: white
+// header
+.owl-stage .owl-item
+	background-image: url(../images/fon.jpg)
+	width: 100%
+	background-repeat: no-repeat
+	background-size: cover
 
-.sec-2 
-  margin: 550px 0px 0px 0px
-  background-color: white
-  h3
-    font-size: $size42
-    padding: 120px 0px 50px 0px
-.gallery-options img
-  height: 350px
-.gallery-options
-  margin-bottom: 100px
-.img-writers 
-  img 
-    width: 1000px
-    height: auto
-
-
-
-  
+// carousel
+.owl-nav 
+	display: block
+// menu
+.navbar-light .navbar-nav .nav-link
+	color: $color
+	margin-right: 30px
+.navbar-light .navbar-nav .nav-link:hover
+	color: orange
+	transition: 2s
+.navbar-expand-lg .navbar-collapse
+	justify-content: flex-end
+.voron img 
+	width: 40%
+	height: auto
+	opacity: 0.5
+	li 
+		height: 500px
+.owl-nav,.owl-dots
+	display: none
+// scroll
+.scroll span 
+	position: absolute
+	right: 60px
+.scroll-icon 
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 2em
+	width: 1.2em
+	margin-bottom: 30px
+	font-size: 22px
+	color: #cc9933
+	border-radius: 2em
+	border: solid 2px
+	transition: .4s
+.scroll-icon:hover 
+	background-color: rgba(#fff, .05)
+	color: #fff
+.scroll-icon::after 
+	content: ' '
+	width: 5px
+	height: 5px
+	background-color: #cc9933
+	border-radius: 50%
+	animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1)
+@keyframes scroll-icon 
+	0% 
+		transform: translateY(-12px) 
+		opacity: 0
+	30%,70% 
+		opacity: 1 
+	100%  
+		transform: translateY(12px) 
+		opacity: 0
+// scroll-batton
+#back-top 
+	position: fixed
+	display: none
+	right: 50px
+	bottom: 50px
+	z-index: 999999
+// gallery-optios
+.gallery-options span 
+	position: absolute
+	width: 50%
+	height: auto
+	left: 0
+	right: 0
+	top: 100px
+	text-align: center
+	margin: 0 auto
+	color: red
+	padding: 10px 0px
+	border-color: blue
+	border-style: double
+	border-width: 2px 0px 2px 0px
+	opacity: 0
+.gallery-options span:hover
+	opacity: 1
+	border-width: 2px 2px 2px 2px
+	transition: 0.5s
+.gallery-options li 
+	position: relative
+	padding: 2px 2px
+	width: 495px

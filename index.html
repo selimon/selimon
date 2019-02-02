@@ -1,99 +1,152 @@
-<!DOCTYPE html>
-<html>
-	<head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<title>site</title>
-		<link rel="stylesheet" type="text/css" href="css/carousel.css">
-		<link rel="stylesheet" type="text/css" href="css/video.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
-	</head>
-	<body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <!-- FONTS-AMMESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- gallery -->
+    <link rel="stylesheet" type="text/css" href="css/block-gallery.css">
+    <!-- carousel -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+    <!-- fancyBox -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+    <title>Hello, world!</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header id="header">
+      <section>
+        <div class="container-fluid ">
+          <div class="row ">
+            <div class="col-lg-12 ">
+              <div class="owl-carousel owl-theme owl-loaded ">
+                <div class="owl-stage-outer">
+                  <div class="owl-stage">
+                    <div class="owl-item col-lg-12 text-center text-white">
+                      <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="width: 100%;z-index: 9">
+                        <a href="#"><img src="images/wings.png" alt="" style="width: 50px;height: 50px"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav">
+                            <li class="nav-item ">
+                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">My works</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">About me</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                      <div class="row d-flex justify-content-end no-gutters">
+                        <div class="voron col-lg-6 mb-5 mt-5">
+                          <li><img src="images/voron.jpg" alt=""></li>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 scroll  ">
+                        <a href="#sectionPortfolio" class="scroll-icon float-right " onclick="showFun()" id="scroll"><span>click</span></a>
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div class="col-lg-12 text-white text-center">
+                        <h1>My Works</h1>
+                      </div>
+                      <div class="row no-gutters">
+                        <div class="col-lg-4 gallery-options">
+                          <li><a href="#"><span>Text-options</span></a><img src="images/thumb.jpg" alt=""></li>
+                          <li><a href="#"><span>Text-options</span></a><img src="images/thumb.jpg" alt=""></li>
+                          <li><a href="#"><span>Text-options</span></a><img src="images/thumb.jpg" alt=""></li>
+                        </div>
+                        <div class="col-lg-4 gallery-options">
+                          <li><a href="#"><span>Text-options</span></a><img src="images/thumb.jpg" alt=""></li>
+                          <li><a href="#"><span>Text-options</span></a><img src="images/thumb.jpg" alt=""></li>
+                          <li><a href="#"><span>Text-options</span></a><img src="images/thumb.jpg" alt=""></li>
+                        </div>
+                        <div class="col-lg-4 gallery-options">
+                          <li><a href="#"><span>Text-options</span></a><img src="images/thumb.jpg" alt=""></li>
+                          <li><a href="#"><span>Text-options</span></a><img src="images/thumb.jpg" alt=""></li>
+                          <li><a href="#"><span>Text-options</span></a><img src="images/thumb.jpg" alt=""></li>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item"></div>
+                  </div>
+                  <div class="owl-nav" >
+                  </div>
+                </div>
+                <div class="owl-dots">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <div id="back-top" class=" text-right "><a href="#header"><i class="fas fa-arrow-circle-up" style="font-size:40px;"></i></a></div>
+    <section id="sectionPortfolio" style="display:none;">
+      <div class="container">
+        <div class="col-lg-12 text-center text-white">
+          <h1>Portfolio</h1>
+        </div>
+        <div class="row no-gutters col-lg-12 col-md-12 col-sm-12">
+          <div class="col-lg-4 portfolio">
+            <img src="images/portfolio.jpg" alt="">
+            <img src="images/portfolio.jpg" alt="">
+            <img src="images/portfolio.jpg" alt="">
+          </div>
+          <div class="col-lg-4 portfolio">
+            <img src="images/portfolio.jpg" alt="">
+            <img src="images/portfolio.jpg" alt="">
+            <img src="images/portfolio.jpg" alt="">
+          </div>
+          <div class="col-lg-4 portfolio">
+            <img src="images/portfolio.jpg" alt="">
+            <img src="images/portfolio.jpg" alt="">
+            <img src="images/portfolio.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<section >
-
-<video autoplay loop muted class="bgvideo no" id="bgvideo ">
-   <source src="video_fon/Unцtitled.mp4" type="video/mp4"></source>
-  </video>
-		<div class="container-fluid">
-			<input id="nav-btn-open" name="nav" type="radio" value="Show Navigation" />
-			<label for="nav-btn-open"><i class="fab fa-artstation"></i>Show Navigation</label>
-			<input id="nav-btn-close" name="nav" type="radio" value="Close Navigation" />
-			<label for="nav-btn-close"><i class="fab fa-artstation"></i> Close Navigation</label>
-			<nav id="nav" role="navigation">
-				<!-- NAV - Primary -->
-				<ul class="nav-primary ">
-					<li class="item "><a href="#" class="l">Home</a></li>
-					<li class="item "><a href="#" class="d">Portfolio</a></li>
-					<li class="item "><a href="#" class="s">Recall</a></li>
-				</ul>
-				<ul class="nav-primary-one">
-					<li><a href="#"><i class="fab fa-vk"></i></a></li>
-					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-					</ul>
-			</nav>
-		</div>
-	</section>
-	<section class="sec-1">
-		<div class="container ">
-			<div class="col-lg-12 text-center text-white mt-5">
-			<h2>Gallery</h2>
-			</div>
-		</div>
-	</section>
-
-	<section id="sec-2" class="sec-2 ">
-		<div class="container-fluid">
-			<div class="col-lg-12 text-center "><h3>Portfolio</h3></div>
-			<div class="row no-gutters gallery-options">
-				<div class="col-lg-4 ">
-					<a data-fancybox="gallery" href="images/gallery/1.jpg"><img src="images/gallery/1.jpg" alt="" class="img-fluid"></a>
-					<a data-fancybox="gallery" href="images/gallery/2.jpg"><img src="images/gallery/2.jpg" alt="" class="img-fluid"></a>
-					<a data-fancybox="gallery" href="images/gallery/3.jpg"><img src="images/gallery/3.jpg" alt="" class="img-fluid"></a>
-					<a data-fancybox="gallery" href="images/gallery/4.jpg"><img src="images/gallery/4.jpg" alt="" class="img-fluid"></a>
-				</div>
-				<div class="col-lg-4 ">
-					<a data-fancybox="gallery" href="images/gallery/5.jpg"><img src="images/gallery/5.jpg" alt="" class="img-fluid"></a>
-					<a data-fancybox="gallery" href="images/gallery/6.jpg"><img src="images/gallery/6.jpg" alt="" class="img-fluid"></a>
-					<a data-fancybox="gallery" href="images/gallery/7.jpg"><img src="images/gallery/7.jpg" alt="" class="img-fluid"></a>
-					<a data-fancybox="gallery" href="images/gallery/8.jpg"><img src="images/gallery/8.jpg" alt="" class="img-fluid"></a>
-				</div>
-				<div class="col-lg-4">
-					<a data-fancybox="gallery" href="images/gallery/9.jpg"><img src="images/gallery/9.jpg" alt="" class="img-fluid"></a>
-					<a data-fancybox="gallery" href="images/gallery/10.jpg"><img src="images/gallery/10.jpg" alt="" class="img-fluid"></a>
-					<a data-fancybox="gallery" href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" alt="" class="img-fluid"></a>
-					<a data-fancybox="gallery" href="images/gallery/12.jpg"><img src="images/gallery/12.jpg" alt="" class="img-fluid"></a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6 img-writers d-flex">
-					<a data-fancybox="gallery" href="images/monoliza.jpg"><img src="images/monoliza.jpg" alt="" class="img-fluid"></a>
-					<div class="h3 ml-5">
-						«Мо́на Ли́за», она же «Джоко́нда»
-						<p>Картина Леонардо да Винчи, находящаяся в Лувре (Париж, Франция), одно из самых известных произведений живописи в мире[2][3], которое, как считается, является портретом Лизы Герардини, супруги торговца шёлком из Флоренции Франческо дель Джокондо, написанным около 1503—1505 года.</p>
-					</div>
-				</div>
-				
-				<div class="col-lg-6 img-writers d-flex">
-					<a data-fancybox="gallery" href="images/monoliza.jpg"><img src="images/monoliza.jpg" alt="" class="img-fluid"></a>
-					<div class="h3 ml-5">
-						«Мо́на Ли́за», она же «Джоко́нда»
-						<p>Картина Леонардо да Винчи, находящаяся в Лувре (Париж, Франция), одно из самых известных произведений живописи в мире[2][3], которое, как считается, является портретом Лизы Герардини, супруги торговца шёлком из Флоренции Франческо дель Джокондо, написанным около 1503—1505 года.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	
-</body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/click.js"></script>
+    <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+    0:{
+    items:1
+    },
+    600:{
+    items:1
+    },
+    1000:{
+    items:1
+    }
+    }
+    })
+    </script>
+  </body>
 </html>
