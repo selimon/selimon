@@ -1,60 +1,54 @@
 /*specification*/
 body {
-	background-image: url(../images/fon.jpg);
-	color: black;
+background-image: url(../images/fon.jpg);
+color: black;
 }
 img {
-	max-width: 100%;
-	z-index: 999
+max-width: 100%;
+height: 400px
 }
 a,a:hover {
-	text-decoration: none;
-	color: inherit;
+text-decoration: none;
+color: inherit;
 }
 h4 {
-	font-size: 14px
+font-size: 14px
 }
 li {
-	list-style: none;
+list-style: none;
 }
 .container {
-	max-width: 800px;
-	width: 100%
+max-width: 800px;
+width: 100%
 }
 i.fab {
-	color:black;
-	font-size: 40px
+color:black;
+font-size: 40px
 }
 .soc-icons li{
-	margin:50px 20px 0px 20px;
-	transition: 1.5s
+margin:50px 20px 0px 20px;
+transition: 1.5s
 }
 .soc-icons li:hover {
-	transform: scale(1.5);
-	transition: 1.5s
+transform: scale(1.5);
+transition: 1.5s
 }
 /*info-content*/
 .box-sizing {
-	background-color: white;
-	width: 90%;
+background-color: white;
+width: 90%;
 }
 .footer {
-	background: #333333;
-	width: 90%;
-}
-img:hover {
-	transform: scale(1);
-	position: absolute;
-	left: 0;
-	right: 0;
+background: #333333;
+width: 90%;
 }
 .effect{
-	transition: 1.5s
+transition: 1.5s
 }
 .effect:hover  {
-	color: red;
-	transition: 1.5s;
-	text-decoration: line;
-	background-color: black;
-	padding: 10px;
+color: red;
+transition: 1.5s;
+text-decoration: line;
+background-color: black;
+padding: 10px;
 }
