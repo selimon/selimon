@@ -18,7 +18,9 @@ list-style: none;
 }
 .container {
 max-width: 800px;
-width: 100%
+width: 100%;
+margin: 0 auto;
+padding: 0;
 }
 .logo {
 	height: 150px
@@ -56,4 +58,15 @@ padding: 10px;
 }
 .img-options img {
 	height: 400px
+}
+
+
+/*block-black*/
+.mani {
+	border: 2px solid blue;
+	padding: 5px;
+}
+.info-block {
+	color: red;
+
 }
