@@ -123,3 +123,10 @@ fieldset {
 }
 
 
+
+
+@media (min-width: 320px) and (max-width: 812px){
+	.container-form {
+		right: 0px
+	}
+}
