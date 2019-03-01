@@ -45,4 +45,7 @@ p:hover{
 	header {
 		background-position: auto;
 	}
+	.effect {
+		justify-content: center!important;
+	}
 }
