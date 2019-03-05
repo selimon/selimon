@@ -1,0 +1,244 @@
+/* Specification */
+
+body{
+	font-family: 'Montserrat Alternates', sans-serif;
+	color: #fff;
+}
+
+ul, li, h1, h2, h3, p{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a, a:hover, a:visited, a:active, a:focus{
+	text-decoration: none;
+	color: #fff
+}
+
+.white{
+	color: #fff
+}
+
+/* Contacts */
+
+#contacts{
+	padding: 41px 0 23px 0;
+	background: #ccc url(../img/contacts_bg.jpg) no-repeat center top / cover;
+}	
+
+.titles__main{
+	font-size: 36px;
+}
+
+.titles__text{
+	color: #c4c4c4;
+	font-size: 24px;
+	width: 946px;
+	margin: 0 auto;
+}
+
+.content__title, .form__title{
+	font-size: 36px;
+	font-weight: 300;
+	margin-bottom: 50px;
+	margin-top: 55px;
+}
+
+.contact__list__item{
+	color: #B6B6B6;
+	margin-bottom: 45px;
+	font-size: 20px;
+}
+
+.fa-circle{
+	color: #C1272D;
+	margin-right: 10px;
+	font-size: 15px;
+}
+
+.number{
+	margin-right: 50px
+}
+
+.form__title{
+	display: block;
+	text-align: right;
+}
+
+.form_group{
+	position: relative;
+}
+
+.form_group label{
+	position: absolute;
+	color: #c4c4c4;
+	transition: all 0.3s ease;
+	cursor: text;
+}
+
+input{
+	border: none;
+	border-bottom: 1px solid #c4c4c4;
+	outline: none;
+	margin-bottom: 55px;
+	background: transparent;
+	width: 370px;
+	color: #fff
+}
+
+.form-active{
+	top: -12px;
+	font-size: 12px;
+}
+
+.send{
+	width: 211px;
+	padding: 9px 0;
+	background: #c1272d;
+	border: none ;
+	outline: none !important;
+	box-shadow: 0 5px 10px #000;
+	margin: 0 auto;
+	border-radius: 20px;
+	color: #fff;
+	margin-bottom: 75px;
+	cursor: pointer;
+}
+
+/* Footer */
+
+#footer{
+	background: #4D4D4D;
+	padding: 66px 0 17px 0;
+}
+
+#footer .row{
+	padding:  0 15px
+}
+
+.footer__nav{
+	border-right: 1px solid #C4C4C4
+}
+
+.footer__menu{
+	margin-top: 18px;
+}
+
+.footer__nav .footer__menu .menu__item a{
+	font-size: 16px;
+}
+
+.footer__nav .footer__menu .menu__item:hover a{
+	color: #fff !important
+}
+
+.way_up{
+	font-size: 48px;
+	color: #C4C4C4;
+	margin-top: 84px;
+}
+
+.author{
+	margin-left: 25px;
+}
+
+.credo{
+	font-size: 24px;
+	color: #fff;
+	width: 370px;
+	margin: 10px 0 20px 0;
+}
+
+.soc_links i{
+	font-size: 24px;
+	margin-right:20px;
+	color: #C4C4C4
+}
+
+.callback{
+	margin-left: auto;
+}
+
+.credits{
+	margin-top: 20px;
+	width: 100%;}
+
+.credits__item{
+	font-size: 10px;
+}
+
+.footer__nav__menu__item{
+	margin-bottom: 15px;
+}
+
+.footer__nav__menu__item a{
+	color: #C4C4C4;
+	transition: all 0.3s ease;
+}
+
+.footer__nav__menu__item a:hover{
+	color: #fff;
+}
+
+/* Responsive */
+
+/* For laptops and desktops - screens equal to or greater than 1200px wide */
+@media (max-width: 1200px){
+	
+}
+
+/* For small laptops - screens equal to or greater than 992px wide */
+@media (max-width: 992px){
+	.titles__text{
+		width: auto
+	}	
+
+	.form-container{
+		justify-content: center !important
+	}
+
+	input{
+		width: 100%
+	}
+
+	.form__title{
+		text-align: center;
+	}
+}
+
+/* For tablets - screens equal to or greater than 768px wide */
+@media (max-width: 768px){
+	.footer__intro{
+		text-align: center;
+		display: flex;
+		justify-content: center;
+	}
+
+	.footer__nav, .author{
+		border: none;
+		margin-bottom: 50px;
+	}
+
+	.credo{
+		width: auto
+	}
+
+	.footer__nav2{
+		margin: 0 auto;
+	}
+
+	.footer__nav__menu{
+		text-align: center;
+	}
+
+	.number{
+		display: block;
+		margin-left: 50px;
+	}
+}
+
+/* For phones - screens less than 768px wide */
+@media (max-width: 576px){
+
+}
