@@ -122,6 +122,9 @@ main {
   position: absolute;
   right: 0px; }
 
+.active {
+  transform: translateX(0%); }
+
 .bg-fon-contact {
   background: linear-gradient(0deg, #232323, #232323);
   min-height: 100vh; }
