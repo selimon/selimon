@@ -22,7 +22,7 @@
   .grafik {
     justify-content: flex-start;
     padding: 0px 0px 20px 0px; }
-  .language-one {
+  .language-one, .dd-none {
     display: none !important; }
   .logo {
     width: 120px !important; }
@@ -36,27 +36,78 @@
     padding-left: 0px !important; }
   .text-block-1 {
     padding: 59px 0px 0px 0px;
-    font-size: 16px; }
+    font-size: 9px;
+    width: 155px; }
   .position-text h1 {
-    float: right !important; }
-  .section-block-position {
-    right: 0px; }
-  .sec-img img {
-    width: 150px;
-    height: 235px; }
-  .shoy-text h1, .navbar-toggler {
+    float: right !important;
+    font-size: 16px !important; }
+  .text-position {
+    width: 0px !important; }
+  .shoy-text h1, .navbar-toggler, .history-block {
     padding: 0px !important; }
+  .shoy-text h1 {
+    line-height: 30px !important; }
   .pad-5 {
     padding: 0px 0px 20px 0px !important;
     justify-content: flex-start !important; }
   .bg-fon-one {
     background-position: -228px 14px; }
   .navbar {
-    padding: 0px !important; } }
+    padding: 0px !important; }
+  .section-fou h3 {
+    font-size: 29px !important; }
+  .text-position-bottom h1 {
+    font-size: 80px !important;
+    position: absolute;
+    left: -17px;
+    bottom: -122px; }
+  .img-text {
+    font-size: 80px !important;
+    padding-top: 120px !important;
+    bottom: -51px; }
+  .section-two {
+    padding: 163px 0px 0px 0px !important; }
+    .section-two p {
+      font-size: 9px !important; }
+  .section-p-options {
+    order: 2 !important; }
+  .hi-text h1 {
+    font-size: 19px !important; }
+  .hi-text p {
+    font-size: 9px; }
+  .section-fou h3 {
+    font-size: 16px !important; }
+  .section-fou p {
+    font-size: 9px !important; }
+  .posi-ab {
+    margin: -205px 0px 61px -175px !important; }
+  .posi-rel {
+    margin: 0px 0px 0px 20px !important; }
+    .posi-rel img {
+      width: 220px;
+      height: 300px;
+      z-index: 99; }
+    .posi-rel .text-padd {
+      padding-left: 100px !important; }
+  .section-fou h3 {
+    padding: 0px !important; }
+  .size {
+    bottom: -72px !important; }
+    .size h1 {
+      font-size: 80px !important; } }
 
 @media (max-width: 1366px) and (min-width: 1024px) {
   h1 {
     font-size: 75px !important; } }
+
+@media (max-width: 568px) and (min-width: 375px) {
+  .text-block-1 {
+    width: 290px !important;
+    transform: translate(76%, -76%) !important;
+    font-size: 13px !important; }
+  .section-block-position {
+    width: 212px !important;
+    right: 237px !important; } }
 
 @media (max-width: 1440px) and (min-width: 320px) {
   .mobile-version-contact {

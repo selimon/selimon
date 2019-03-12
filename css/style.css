@@ -36,7 +36,7 @@ li {
 
 .bg-fon {
   font-family: 'Montserrat', sans-serif;
-  background-image: url(../images/fon.png);
+  background-image: url(../images/fon.jpg);
   height: auto;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -133,7 +133,7 @@ main {
   width: 100%; }
 
 .bg-fon-one {
-  background-image: url(../images/fon.png);
+  background-image: url(../images/fon.jpg);
   height: auto;
   background-size: cover; }
 
@@ -223,21 +223,8 @@ main {
 .section-two {
   padding: 176px 0px 200px 0px; }
 
-.section-block-position {
-  position: relative;
-  background-color: white;
-  right: 140px;
-  margin: 0 auto;
-  bottom: 40px;
-  z-index: -1; }
-
 .text-block-1 {
   padding: 59px 0px 50px 0px; }
-
-.text-position {
-  position: relative;
-  width: 300px;
-  height: auto; }
 
 .text-position-bottom {
   position: absolute;
@@ -267,3 +254,26 @@ main {
     padding-bottom: 106px; }
   .section-fou p {
     font-size: 18px; }
+
+.posi-rel {
+  position: relative;
+  margin: 0px 170px 0px 300px;
+  min-width: 150px; }
+
+.posi-ab {
+  position: relative;
+  margin: -265px 0px 0px -250px;
+  padding: 30px;
+  min-width: 100px; }
+
+.text-padd {
+  padding-left: 200px; }
+
+.size {
+  position: absolute;
+  right: 0px;
+  bottom: -160px;
+  color: #AB4FF2; }
+  .size h1 {
+    font-size: 180px;
+    font-weight: bold; }
