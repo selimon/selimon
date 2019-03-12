@@ -63,17 +63,7 @@ main {
   text-transform: uppercase; }
 
 .domload {
-  padding-top: 95px; }
-
-.apple a, .google a {
-  border: 1px solid white;
-  border-radius: 3px; }
-
-.google a {
-  padding: 11px; }
-
-.apple a {
-  padding: 5px; }
+  padding-top: 45px; }
 
 .footer-glavnou {
   position: absolute;
@@ -111,9 +101,12 @@ main {
   position: absolute;
   background: #222222;
   z-index: 99;
-  top: 0px;
+  top: 60px;
   width: 100%;
-  padding: 80px; }
+  padding: 0px 80px;
+  border-bottom: 1px solid white;
+  transition-duration: 1.5s;
+  animation-timing-function: linear; }
 
 .navbar-toggler {
   z-index: 999;
@@ -122,16 +115,9 @@ main {
   position: absolute;
   right: 0px; }
 
-.active {
-  transform: translateX(0%); }
-
 .bg-fon-contact {
   background: linear-gradient(0deg, #232323, #232323);
   min-height: 100vh; }
-
-.fon-carts {
-  background-image: url(../images/cart.png);
-  background-size: cover; }
 
 .mobile-version-contact {
   padding-left: 210px; }
@@ -139,3 +125,84 @@ main {
 .official {
   margin: 0px;
   padding: 0px; }
+
+.block-clock span {
+  font-size: 18px; }
+
+.block-mobile {
+  width: 100%; }
+
+.bg-fon-one {
+  background-image: url(../images/fon.png);
+  height: auto;
+  background-size: cover; }
+
+.card {
+  background-color: transparent;
+  border: none; }
+
+.card-header {
+  border-bottom: 1px solid rgba(131, 131, 131, 0.6);
+  background: transparent;
+  padding: 0px; }
+
+.accordion-text span h5 {
+  padding-left: 100px; }
+
+.accordion-text span {
+  font-size: 14px;
+  letter-spacing: 0.05em; }
+  .accordion-text span ~ h5 {
+    font-size: 25px;
+    font-weight: bold; }
+
+.zoom-text h5 {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-top: 3px;
+  color: #AB4FF2; }
+  .zoom-text h5 ~ span {
+    font-size: 14px;
+    letter-spacing: 0.07em; }
+
+.accord-text-options h5 {
+  font-size: 20px;
+  font-weight: bold; }
+  .accord-text-options h5 ~ div p {
+    font-size: 12px;
+    padding-top: 37px; }
+
+.p-text {
+  padding: 0;
+  margin: 0; }
+
+.container-anonsi {
+  max-width: 1221px;
+  width: 100%;
+  margin: 0 auto; }
+
+.activ {
+  display: block !important;
+  position: absolute;
+  top: 109px;
+  z-index: 99;
+  right: 0; }
+
+.closed, .closed-1, .closed-2, .closed-3 {
+  display: none; }
+
+.no-border {
+  border: none;
+  padding-bottom: 0px !important; }
+
+.border-text {
+  border-bottom: 1px solid rgba(131, 131, 131, 0.6);
+  padding-bottom: 55px; }
+
+.shoy-text h1 {
+  padding: 151px 0px 0px 349px;
+  font-size: 75px;
+  font-weight: bold;
+  line-height: 60px; }
