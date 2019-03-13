@@ -94,7 +94,12 @@
   .size {
     bottom: -72px !important; }
     .size h1 {
-      font-size: 80px !important; } }
+      font-size: 80px !important; }
+  .history-block {
+    padding-top: 200px !important; }
+  .bg-2 {
+    order: -2;
+    display: block !important; } }
 
 @media (max-width: 1366px) and (min-width: 1024px) {
   h1 {
