@@ -255,6 +255,16 @@ main {
   .section-fou p {
     font-size: 18px; }
 
+.img-text {
+  position: absolute;
+  color: white;
+  text-align: center;
+  left: 0;
+  right: 0;
+  padding-top: 220px;
+  font-size: 180px;
+  font-weight: bold; }
+
 .posi-rel {
   position: relative;
   margin: 0px 170px 0px 300px;
