@@ -22,7 +22,7 @@
   .grafik {
     justify-content: flex-start;
     padding: 0px 0px 20px 0px; }
-  .language-one, .dd-none, .display {
+  .language-one, .dd-none, .display, .none {
     display: none !important; }
   .logo {
     width: 120px !important; }
@@ -236,7 +236,7 @@
     bottom: 179px !important; }
   .text-center-header {
     padding: 166px 0px 193px 0px !important; }
-  .botton {
+  .botton, .none {
     display: none !important; } }
 
 @media (max-width: 812px) and (min-width: 568px) {
