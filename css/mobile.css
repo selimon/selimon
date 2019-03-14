@@ -123,36 +123,18 @@
     display: none; }
   .pp-l, .text-center-header {
     padding: 0px !important; }
-  .text-center-header {
-    padding: 150px 0px 0px 150px; }
-    .text-center-header h1 {
-      font-size: 30px !important;
-      letter-spacing: 0.1em;
-      font-weight: bold; }
-    .text-center-header h3 {
-      font-size: 16px !important; }
-  .footer-text-opt {
-    padding: 5px !important; }
-    .footer-text-opt h2 {
-      font-size: 12px !important;
-      font-weight: bold;
-      padding-bottom: 20px; }
-    .footer-text-opt p {
-      font-size: 9px !important; }
-    .footer-text-opt span {
-      font-size: 9px !important; }
   .posi-rig {
     position: relative !important;
     height: 140px !important;
     bottom: 20px !important;
-    width: 196px;
+    width: 220px;
     left: 90px; }
   .posi-left {
     position: relative !important;
     height: 140px !important;
     bottom: 0px !important;
     right: 0px !important;
-    width: 236px; }
+    width: 210px; }
   .pt-mobi {
     padding: 0px !important; }
   .text-domload h5 {
@@ -160,7 +142,27 @@
     .text-domload h5 .col-llg-2 {
       max-width: 53% !important;
       flex: 53% !important;
-      padding-top: 5px; } }
+      padding-top: 5px; }
+    .text-domload h5 .text-center-header {
+      padding: 150px 0px 0px 150px; }
+      .text-domload h5 .text-center-header h1 {
+        font-size: 30px !important;
+        letter-spacing: 0.1em;
+        font-weight: bold; }
+    .text-domload h5 h2 {
+      font-size: 12px !important;
+      font-weight: bold;
+      padding-bottom: 20px; }
+    .text-domload h5 h3 {
+      font-size: 16px !important; }
+    .text-domload h5 p span {
+      font-size: 9px !important; }
+  .footer-text-opt {
+    padding: 12px !important; }
+    .footer-text-opt h2 {
+      font-size: 16px !important; }
+    .footer-text-opt p {
+      font-size: 12px !important; } }
 
 @media (max-width: 1366px) and (min-width: 1024px) {
   h1 {
@@ -245,9 +247,27 @@
   .display {
     display: block !important; }
   .mobile-foot {
-    width: 10% !important; }
+    width: 10% !important;
+    height: 80px;
+    align-self: flex-end; }
     .mobile-foot .mob-foot {
-      width: 50% !important; } }
+      width: 50% !important;
+      height: 80px !important;
+      align-self: flex-end; }
+    .mobile-foot .footer-text-opt {
+      padding: 15px !important; } }
+
+@media (max-width: 1440px) and (min-width: 667px) {
+  .posi-left, .posi-rig {
+    position: relative !important;
+    right: 0px !important;
+    bottom: 0px !important; }
+  .footer-bg, .bg-play {
+    height: 100px;
+    align-self: flex-end; }
+  .pt-mobi {
+    padding: 20px;
+    text-align: center; } }
 
 .prr-5 {
   padding: 82px 58px 0px 0px; }

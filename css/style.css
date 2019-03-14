@@ -102,12 +102,17 @@ main {
   width: 20%; }
 
 .mob-foot {
-  width: 80%; }
+  width: 80%;
+  height: 80px;
+  align-self: flex-end; }
   .mob-foot span {
     font-size: 12px; }
 
 .aflat {
   padding: 100px 0px 100px 0px; }
+
+.mobile-foot a img {
+  width: 25px; }
 
 .block-time h4 {
   font-size: 35px;
@@ -146,12 +151,14 @@ main {
   position: absolute;
   background: #222222;
   z-index: 99;
-  top: 60px;
+  top: 0px;
   width: 100%;
   padding: 0px 80px;
   border-bottom: 1px solid white;
   transition-duration: 1.5s;
   animation-timing-function: linear; }
+  .navbar-mobile-menu .navbar-nav {
+    padding-top: 115px; }
 
 .navbar-toggler {
   z-index: 999;
@@ -159,6 +166,13 @@ main {
   top: -20px;
   position: absolute;
   right: 0px; }
+
+.mobile-text h1 {
+  font-weight: bold;
+  letter-spacing: 0.06em; }
+
+.footer-text-opt h2 {
+  font-size: 12px; }
 
 .bg-fon-contact {
   background: linear-gradient(0deg, #232323, #232323);
