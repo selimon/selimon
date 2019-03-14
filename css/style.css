@@ -2,6 +2,9 @@
 @import url("colorSize.css");
 @import url("effects.css");
 @import url("mobile.css");
+* {
+  box-sizing: border-box; }
+
 a, a:hover {
   text-decoration: none;
   color: inherit; }
@@ -43,7 +46,10 @@ li {
 
 .text-rotate {
   transform: rotate(-90deg);
-  margin-top: 300px; }
+  margin-top: 350px; }
+  .text-rotate h2 {
+    letter-spacing: 0.36em;
+    font-size: 26px; }
 
 main {
   margin-top: 100px; }
@@ -62,37 +68,76 @@ main {
 .transform-text {
   text-transform: uppercase; }
 
+.text-center-header {
+  padding: 150px 0px 0px 150px; }
+  .text-center-header h1 {
+    font-size: 95px;
+    letter-spacing: 0.1em;
+    font-weight: bold; }
+  .text-center-header h3 {
+    font-size: 35px; }
+
+.pp-l {
+  padding: 100px 0px 0px 150px; }
+
 .domload {
-  padding-top: 45px; }
+  padding-bottom: 49px; }
+  .domload a {
+    padding-left: 10px; }
 
-.footer-glavnou {
-  position: absolute;
-  bottom: 0px;
-  padding: 0px;
-  margin: 0px; }
+.col-llg-2 {
+  max-width: 35%;
+  flex: 35%; }
 
-.block-text {
+.mobile-main {
+  padding-top: 50px; }
+
+.mobile-text h1 {
+  font-size: 20px; }
+
+.mobile-text h2 {
+  font-size: 16px; }
+
+.mobile-foot {
+  width: 20%; }
+
+.mob-foot {
+  width: 80%; }
+  .mob-foot span {
+    font-size: 12px; }
+
+.aflat {
+  padding: 100px 0px 100px 0px; }
+
+.block-time h4 {
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 0.05em; }
+
+.footer-text-opt {
+  padding: 30px; }
+  .footer-text-opt h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px; }
+  .footer-text-opt p {
+    font-size: 18px; }
+  .footer-text-opt span {
+    font-size: 18px;
+    color: #AB4FF2;
+    font-weight: bold; }
+
+.posi-rig {
   position: absolute;
   right: 0px;
-  bottom: 0px; }
+  height: 240px;
+  bottom: -105px; }
 
-.block-text {
-  padding: 0px;
-  margin: 0px; }
-  .block-text h2 {
-    font-size: 20px;
-    font-weight: bold; }
-  .block-text > div {
-    font-size: 12px;
-    color: #29292D;
-    font-weight: bold; }
-    .block-text > div > div:nth-child(3) {
-      color: #AB4FF2;
-      font-size: 14px;
-      font-weight: 600; }
-  .block-text .block1, .block-text .block2 {
-    padding: 35px 70px 35px 35px;
-    width: 100%; }
+.posi-left {
+  position: absolute;
+  right: 25%;
+  height: 240px;
+  bottom: -105px; }
 
 .navbar-mobile-menu li {
   padding-top: 10px; }
@@ -209,10 +254,9 @@ main {
 
 .bg-fon-history {
   background-image: url(../images/background.png);
-  height: 100vh;
+  height: auto;
   background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh; }
+  background-repeat: no-repeat; }
 
 .history-block {
   padding-top: 236px; }

@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat')
 @import url('colorSize.css'),url("effects.css")
 // specification 
+* 
+  box-sizing: border-box
 a,a:hover 
   text-decoration: none 
   color: inherit
@@ -37,7 +39,10 @@ li
   background-size: cover
 .text-rotate
   transform: rotate(-90deg)
-  margin-top: 300px
+  margin-top: 350px
+  h2 
+    letter-spacing: 0.36em
+    font-size: 26px
 main 
   margin-top: 100px
 .text-options 
@@ -52,35 +57,67 @@ main
   border-radius: 2px
 .transform-text
   text-transform: uppercase
-.domload 
-  padding-top: 45px
+.text-center-header 
+  padding: 150px 0px 0px 150px
+  h1
+    font-size: 95px
+    letter-spacing: 0.1em
+    font-weight: bold
+  h3 
+    font-size: 35px
+.pp-l 
+  padding: 100px 0px 0px 150px
+.domload
+  padding-bottom: 49px
+  a 
+    padding-left: 10px
+.col-llg-2 
+  max-width: 35%
+  flex: 35%
+// mobile
+.mobile-main 
+  padding-top: 50px
+.mobile-text
+  h1 
+    font-size: 20px
+  h2 
+    font-size: 16px
+.mobile-foot 
+  width: 20%
+.mob-foot 
+  width: 80%
+  span 
+    font-size: 12px
+.aflat 
+  padding: 100px 0px 100px 0px
 // footer
-.footer-glavnou 
-  position: absolute
-  bottom: 0px
-  padding: 0px 
-  margin: 0px
-.block-text
-  position: absolute
-  right: 0px
-  bottom: 0px 
-.block-text
-  padding: 0px 
-  margin: 0px
+.block-time 
+  h4 
+    font-size: 35px
+    font-weight: bold
+    letter-spacing: 0.05em
+.footer-text-opt 
+  padding: 30px
   h2 
     font-size: 20px
     font-weight: bold
-  >div 
-    font-size: 12px
-    color: #29292D
+    padding-bottom: 20px
+  p 
+    font-size: 18px
+  span 
+    font-size: 18px
+    color: #AB4FF2
     font-weight: bold
-    >div:nth-child(3)
-      color: #AB4FF2
-      font-size: 14px
-      font-weight: 600
-  .block1,.block2
-    padding: 35px 70px 35px 35px
-    width: 100%
+.posi-rig 
+  position: absolute
+  right: 0px
+  height: 240px
+  bottom: -105px
+.posi-left 
+  position: absolute
+  right: 25%
+  height: 240px
+  bottom: -105px
 // mobile-menu 
 .navbar-mobile-menu li 
   padding-top: 10px
@@ -185,10 +222,9 @@ main
 // block-history
 .bg-fon-history
   background-image: url(../images/background.png)
-  height: 100vh
+  height: auto
   background-size: cover
   background-repeat: no-repeat
-  min-height: 100vh
 .history-block
   padding-top: 236px
   h1
