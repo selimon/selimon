@@ -2,9 +2,7 @@
 		.bg-left,.bg-right{
 		order: 0!important;
 	}	
-	.domload-link {
-		top: 210px!important
-	}
+
 }
 
 @media (max-width: 1200px) and (min-width: 800px){
