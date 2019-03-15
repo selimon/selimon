@@ -184,7 +184,8 @@ main {
 
 .block-mobile {
   width: 100%;
-  justify-content: space-around; }
+  justify-content: space-betwen;
+  padding-left: 4%; }
 
 .p-tt5 {
   padding-left: 100px; }
