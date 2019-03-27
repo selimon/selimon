@@ -6,6 +6,7 @@
 	<title>Document</title>
 	<!-- Reset -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 	<!-- Animate.css -->
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -21,17 +22,17 @@
 		<img src="img/close.png" alt="CLOSE" class="close_btn" onclick="slideout.close()">
 		<ul class="mob-nav__menu">
 			<li class="mob-nav__menu__item">
-				<a href="#" class="go_to" onclick="slideout.close()">Главная
+				<a href="index.html" class="go_to" onclick="slideout.close()">Главная
 				</a>
 			</li>
 			<li class="mob-nav__menu__item">
-				<a href="#" class="go_to" onclick="slideout.close()">История</a>
+				<a href="history.html" class="go_to" onclick="slideout.close()">История</a>
 			</li>
 			<li class="mob-nav__menu__item">
-				<a href="#" class="go_to" onclick="slideout.close()">Анонсы</a>
+				<a href="anonsi.html" class="go_to" onclick="slideout.close()">Анонсы</a>
 			</li>
 			<li class="mob-nav__menu__item">
-				<a href="#" class="go_to" onclick="slideout.close()">Контакты</a>
+				<a href="contact.html" class="go_to" onclick="slideout.close()">Контакты</a>
 			</li>
 		</ul>
 		<div class="mob-lang">
@@ -42,20 +43,20 @@
 		<header id="header">
 			<div class="container-fluid">
 				<div class="row d-flex align-items-center">
-					<div class="col-3">
-						<img src="img/logotype.png" alt="LOGO" class="logo">
+					<div class="col-3 pl-5 logo-p">
+						<a href="index.html"><img src="img/logotype.png" alt="LOGO" class="logo"></a>
 					</div>
 					<div class="col-7 nav_box">
 						<nav class="desc-nav">
 							<ul class="desc_menu d-flex">
 								<li>
-									<a href="#">История</a>
+									<a href="history.html">История</a>
 								</li>
 								<li>
-									<a href="#">Анонсы</a>
+									<a href="anonsi.html">Анонсы</a>
 								</li>
 								<li>
-									<a href="#">Контакты</a>
+									<a href="contact.html">Контакты</a>
 								</li>
 							</ul>
 						</nav>
@@ -79,24 +80,25 @@
 							<p class="offer__text wow fadeInUp" data-wow-delay="1.6s">
 								свето-музыкальное шоу
 							</p>
-							<button class="offer__btn wow fadeInUp" data-wow-delay="2.2s">
+							<button class="offer__btn wow fadeInUp" data-toggle="modal" data-target="#exampleModalCenter" >
 								Анонсы шоу
 							</button>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="offer__download d-flex">
-						<p class="download_text">
-							Скачайте приложения для доступа ко всем функциям
-						</p>
-						<img src="img/app_store.png" alt="App Store">
-						<img src="img/googleplay.png" alt="Google Play">
-					</div>
+
 				</div>
 				<div class="row">
 					<div class="show d-flex align-items-end">
 						<div class="show_nav d-flex">
+												<div class="offer__download d-flex">
+						<p class="download_text">
+							Скачайте приложения для <br>  доступа ко всем функциям
+						</p>
+						<a href="#" class="pr-3 app"><img src="img/app_store.png" alt="App Store"></a>
+						<a href="#" class="google"><img src="img/googleplay.png" alt="Google Play"></a>
+					</div>
 							<button class="show_play"><img src="img/play_btn.png" alt="PLAY"></button>
 							<div class="show_start">
 								<h2 class="show_title_one">начало шоу в 21:00</h2>
@@ -109,19 +111,19 @@
 									Следующее шоу
 								</h3>
 								<p class="show_text_box_text">
-									Ближайшее
-									свето-музыкальное шоу состоится 1 июня в 21:00 (Мск)
+									Ближайшее <br>
+									свето-музыкальное шоу состоится <br>1 июня  в 21:00 (Мск)
 								</p>
-								<a href="#" class="learn_more">Узнать больше</a>
+								<a href="#" class="learn_more pt-3">Узнать больше</a>
 							</div>
 							<div class="show_text_box2 show_text_box">
 								<h3 class="show_text_box_title">
 									История
 								</h3>
 								<p class="show_text_box_text">
-									На строительстве Арбатского радиуса второй очереди метро вчера состоялись вновь выстроенного моста.
+									 На строительстве Арбатского  радиуса второй очереди метро вчера состоялись вновь  выстроенного моста.
 								</p>
-								<img src="img/arrow.png" alt="READ MORE" class="read_more_arrow">
+								<a href="#"><img src="img/arrow.png" alt="READ MORE" class="read_more_arrow pt-1"></a>
 							</div>
 						</div>
 					</div>
@@ -129,11 +131,35 @@
 			</div>
 		</header>
 	</div>
-	<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- modal -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center ">
+        <h5 class="modal-title pb-3" id="exampleModalLongTitle">Мобильный оператор может <br> взимать плату </h5>
+        <h2>Звонки совершаются через вашу <br> сотовую сеть, не через интернет.</h2>
+      </div>
+      <div class="modal-body row text-center ">
+        <div class="col-lg-6 bottom">
+          <div class="p-2 transform-text">
+        <a href="#" style="text-transform: uppercase" data-dismiss="modal" aria-label="Close"><h4>Отменить</h4></a>
+      </div>
+      </div>
+              <div class="col-lg-6 ">
+          <div class="p-2 transform-text">
+        <a href="#" style="text-transform: uppercase"><h4>позвонить</h4></a>
+      </div>
+      </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/slideout.min.js"></script>
 	<script src="js/wow.min.js"></script>
-	<script src="js/main.js"></script>
-	<script type="text/javascript" defer>
+	<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" defer>
 		var slideout = new Slideout({ 
 			'panel': document.getElementById('main'),       //id блока, что будет отъезжать в бок
 			'menu': document.getElementById('mob-nav'),     //id меню 
@@ -148,5 +174,6 @@
 	<script>
 		new WOW().init();
 	</script>
+
 </body>
 </html>
