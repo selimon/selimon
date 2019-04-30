@@ -1,179 +1,395 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<!-- Reset -->
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<!-- fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
-	<!-- Animate.css -->
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<!-- Main stylesheet file -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!-- Responsive layout -->
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<title>Печушка</title>
+	<link rel="stylesheet" type="text/css" href="css/bottom-effect.css">
 </head>
 <body>
-	<nav id="mob-nav">
-		<img src="img/close.png" alt="CLOSE" class="close_btn" onclick="slideout.close()">
-		<ul class="mob-nav__menu">
-			<li class="mob-nav__menu__item">
-				<a href="index.html" class="go_to" onclick="slideout.close()">Главная
-				</a>
-			</li>
-			<li class="mob-nav__menu__item">
-				<a href="history.html" class="go_to" onclick="slideout.close()">История</a>
-			</li>
-			<li class="mob-nav__menu__item">
-				<a href="anonsi.html" class="go_to" onclick="slideout.close()">Анонсы</a>
-			</li>
-			<li class="mob-nav__menu__item">
-				<a href="contact.html" class="go_to" onclick="slideout.close()">Контакты</a>
-			</li>
-		</ul>
-		<div class="mob-lang">
-			<span>ru </span>|<span> en</span>
-		</div>
-	</nav>
-	<div id="main" class="main">
-		<header id="header">
-			<div class="container-fluid">
-				<div class="row d-flex align-items-center">
-					<div class="col-3 pl-5 logo-p">
-						<a href="index.html"><img src="img/logotype.png" alt="LOGO" class="logo"></a>
-					</div>
-					<div class="col-7 nav_box">
-						<nav class="desc-nav">
-							<ul class="desc_menu d-flex">
-								<li>
-									<a href="history.html">История</a>
-								</li>
-								<li>
-									<a href="anonsi.html">Анонсы</a>
-								</li>
-								<li>
-									<a href="contact.html">Контакты</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<div class="col-2 ml-auto">
-						<div class="lang text-right">
-							<span>ru </span>|<span> en</span>
+	<header id="header" class="header">
+		<div class="container">
+			<div class="headaing d-flex align-items-center">
+				<a href="glavnaya.html"><img src="img/Logo.png" alt="logo" class="logo"></a>
+				<nav class="nav">
+					<ul class="menu d-flex">
+						<li class="menu__item"><a href="glavnaya.html">Главная</a></li>
+						<li class="menu__item"><a href="desktop5.html">Материалы</a></li>
+						<li class="menu__item"><a href="blog.html">Блог</a></li>
+					</ul>
+				</nav>
+				<div class="contacts" id="desctop_contacts">
+					<p class="contacts__desc">
+						<span>Иван Калинчук</span> - печник, который любит свою работу
+					</p>
+					<div class="info d-flex justify-content-end">
+						<div class="info__item info__phone">
+							<i class="fa fa-phone"></i>
+							<a href="#">+380939631280</a>
 						</div>
-						<img src="img/menu_bars.png" class="toggle-button" alt="HAMBURHER">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-1 hashtag_box">
-						<div class="hashtag">#СМОЛЕНСКИЙМОСТ</div>	
-					</div>
-					<div class="col-11 m-auto">
-						<div class="offer text-left">
-							<h1 class="offer__title wow fadeInUp" data-wow-delay="1.2s">
-								Смоленский мост
-							</h1> 
-							<p class="offer__text wow fadeInUp" data-wow-delay="1.6s">
-								свето-музыкальное шоу
-							</p>
-							<button class="offer__btn wow fadeInUp" data-toggle="modal" data-target="#exampleModalCenter" >
-								Анонсы шоу
-							</button>
+						<div class="info__item info__viber">
+							<i class="fab fa-viber"></i>
+							<a href="#">+380939631280</a>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-
-				</div>
-				<div class="row">
-					<div class="show d-flex align-items-end">
-						<div class="show_nav d-flex">
-												<div class="offer__download d-flex">
-						<p class="download_text">
-							Скачайте приложения для <br>  доступа ко всем функциям
+				<i class="fas fa-bars"></i>
+				<nav class="mobile_nav">
+					<i class="fas fa-times"></i>
+					<ul class="mobile__menu">
+						<li class="menu__item"><a href="#">Главная</a></li>
+						<li class="menu__item"><a href="#">Материалы</a></li>
+						<li class="menu__item"><a href="blog.html">Блог</a></li>
+					</ul>
+					<div class="contacts">
+						<p class="contacts__desc">
+							<span>Иван Калинчук</span> - печник, который любит свою работу
 						</p>
-						<a href="#" class="pr-3 app"><img src="img/app_store.png" alt="App Store"></a>
-						<a href="#" class="google"><img src="img/googleplay.png" alt="Google Play"></a>
+						<div class="info d-flex justify-content-end">
+							<div class="info__item info__phone">
+								<i class="fa fa-phone"></i>
+								+380939631280
+							</div>
+							<div class="info__item info__viber">
+								<i class="fab fa-viber"></i>
+								+380939631280
+							</div>
+						</div>
 					</div>
-							<button class="show_play"><img src="img/play_btn.png" alt="PLAY"></button>
-							<div class="show_start">
-								<h2 class="show_title_one">начало шоу в 21:00</h2>
-								<p class="show_title_two">не пропусти</p>
-							</div>
-						</div>
-						<div class="show_text d-flex">
-							<div class="show_text_box1 show_text_box">
-								<h3 class="show_text_box_title">
-									Следующее шоу
-								</h3>
-								<p class="show_text_box_text">
-									Ближайшее <br>
-									свето-музыкальное шоу состоится <br>1 июня  в 21:00 (Мск)
-								</p>
-								<a href="#" class="learn_more pt-3">Узнать больше</a>
-							</div>
-							<div class="show_text_box2 show_text_box">
-								<h3 class="show_text_box_title">
-									История
-								</h3>
-								<p class="show_text_box_text">
-									 На строительстве Арбатского  радиуса второй очереди метро вчера состоялись вновь  выстроенного моста.
-								</p>
-								<a href="#"><img src="img/arrow.png" alt="READ MORE" class="read_more_arrow pt-1"></a>
-							</div>
-						</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<section class="wrapper" id="wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="titles">
+						<h1 class="titles__main text-center">
+							Мои работы
+						</h1>
 					</div>
 				</div>
 			</div>
-		</header>
-	</div>
-	<!-- modal -->
-	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center ">
-        <h5 class="modal-title pb-3" id="exampleModalLongTitle">Мобильный оператор может <br> взимать плату </h5>
-        <h2>Звонки совершаются через вашу <br> сотовую сеть, не через интернет.</h2>
-      </div>
-      <div class="modal-body row text-center ">
-        <div class="col-lg-6 bottom">
-          <div class="p-2 transform-text">
-        <a href="#" style="text-transform: uppercase" data-dismiss="modal" aria-label="Close"><h4>Отменить</h4></a>
-      </div>
-      </div>
-              <div class="col-lg-6 ">
-          <div class="p-2 transform-text">
-        <a href="#" style="text-transform: uppercase"><h4>позвонить</h4></a>
-      </div>
-      </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/slideout.min.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" defer>
-		var slideout = new Slideout({ 
-			'panel': document.getElementById('main'),       //id блока, что будет отъезжать в бок
-			'menu': document.getElementById('mob-nav'),     //id меню 
-			'padding': 375,                                 //На сколько контент должен отъехать в бок 
-			'tolerance': 70 
-		}); 
-		// Toggle button
-		document.querySelector('.toggle-button').addEventListener('click', function() {
-			slideout.toggle();
-		});
-	</script>
-	<script>
-		new WOW().init();
-	</script>
-
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/pech-kamin0.png" alt="portfolio" class="portfolio__preview">	
+						<a href="images/pechka-v-dome29.jpg" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/pech-kamin0.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/pech-kamin0.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/pech-kamin0.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/pech-kamin0.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/pech-kamin0.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/pech-kamin0.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/pech-kamin0.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/pech-kamin0.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio_work_2.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/portfolio_work_2.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/pech-kamin0.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/pech-kamin0.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/pech-kamin0.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/pech-kamin0.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/pech-kamin0.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/pech-kamin0.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/pech-kamin0.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/pech-kamin0.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/pech-kamin0.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/pech-kamin0.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio_work_2.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/portfolio_work_2.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/pech-kamin0.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/pech-kamin0.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/pech-kamin0.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/pech-kamin0.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/pech-kamin0.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/pech-kamin0.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/pech-kamin0.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/pech-kamin0.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/pech-kamin0.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/pech-kamin0.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio_work_2.png" alt="portfolio" class="portfolio__preview">	
+						<a href="img/portfolio_work_2.png" data-lightbox="image-1" data-title="Description">						
+							<div class="inner text-center">
+								<img src="img/Vector.png" alt="zoom in" class="zoom__in_img">
+								<div class="portfolio__description">
+									Печь / июнь 2018
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="row footer__intro">
+				<nav class="footer__nav">
+					<img src="img/footer_logo.png" alt="logo" class="logo">
+					<ul class="footer__menu">
+						<li class="menu__item"><a href="glavnaya.html">Главнaя</a></li>
+						<li class="menu__item"><a href="desktop5.html">Материалы</a></li>
+						<li class="menu__item"><a href="blog.html">Блог</a></li>
+						<li class="menu__item"><a href="index.html">Портфолио</a></li>
+						<li class="menu__item"><a href="projects.html">Чертежи</a></li>
+						<li class="menu__item"><a href="faq.html">FAQ</a></li>
+					</ul>
+					<a href="#" id="button"></a>
+				</nav>
+				<div class="author text-center">
+					<img src="img/author.png" alt="author" class="author__img">
+					<h2 class="credo">
+						Я рад буду сотрудничать с вами
+					</h2>
+					<div class="soc_links soc_hover">
+						<a href="#">
+							<i class="fab fa-facebook"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-instagram"></i>	
+						</a>
+						<a href="#">
+							<i class="fab fa-skype"></i>	
+						</a>
+						<a href="#">
+							<i class="fab fa-telegram"></i>	
+						</a>
+						<a href="#">
+							<i class="fab fa-youtube"></i>	
+						</a>
+						<a href="#">
+							<i class="fab fa-viber"></i>	
+						</a>
+					</div>
+				</div>
+				<div class="callback">
+					<form action="" method="post" class="d-flex">
+						<label for="name">
+							Заказать звонок
+						</label>
+						<input type="text" placeholder="Имя" id="name" class="input">
+						<input type="text" placeholder="Телефон" class="input">
+						<input type="text" placeholder="Город, вопрос, или тема" class="input">
+						<button class="btn b">
+							Отправить заявку
+						</button>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="credits d-flex justify-content-between">
+					<div class="credits__item text-left">
+						Создатели сайта<br>
+						Дизайн: Станислав +380972710176<br>
+						Верстка: Дава
+					</div>
+					<div class="credits__item text-right">
+						© Copyright 2018-2019 by Иван Калинчук. Все права защищены
+						<br>
+						Запрещено любое копирование материалов ресурса без письменного согласия владельца
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/scrolling.js"></script>
 </body>
 </html>

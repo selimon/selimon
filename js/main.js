@@ -1,29 +1,42 @@
-$(function(){
-	// Slow Scroll
-	 $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
-	var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
-        if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
-	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500); // анимируем скроолинг к элементу scroll_el
-        }
-	    return false; // выключаем стандартное действие
-    });
-
-	// Arctic Modal
-	$('#').click(function(){
-		$('#').arcticmodal();
+$(function () {
+	$('.fa-bars').click(function(){
+		$('.mobile_nav').addClass('active');
 	});
 
-	// WOW
-	new WOW().init();
+	$('.fa-times').click(function(){
+		$('.mobile_nav').removeClass('active');
+	});
+
+	$('#faq1_caret').click(function(){
+		$('#faq1_caret').toggleClass('rotate');
+		$('#faq1_btn').toggleClass('border-none');
+	});
+
+	$('#faq2_caret').click(function(){
+		$('#faq2_caret').toggleClass('rotate');
+		$('#faq2_btn').toggleClass('border-none');
+	});
+
+	$('#faq3_caret').click(function(){
+		$('#faq3_caret').toggleClass('rotate');
+		$('#faq3_btn').toggleClass('border-none');
+	});
+
+	$('#faq4_caret').click(function(){
+		$('#faq4_caret').toggleClass('rotate');
+		$('#faq4_btn').toggleClass('border-none');
+	});
+
+	$('#faq5_caret').click(function(){
+		$('#faq5_caret').toggleClass('rotate');
+		$('#faq5_btn').toggleClass('border-none');
+	});
 });
 
-
-
-// Preloader
-
-// document.body.onload = function(){
-// 	setTimeout(function(){
-// 		var t = document.getElementById("preloader");
-// 		t.classList.contains("done") || t.classList.add("done");
-// 	},1e3);
-// };
+function slowScroll(id){ // id элемента, нажав на который будет работать анимация
+	var offset = 50;
+	$('html, body').animate({
+		scrollTop: $(id).offset().top - offset
+	}, 500);
+	return false;
+}
